@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688">
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="153dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/average"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/Average_btn"
+        android:layout_width="91dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="7dp"
+        android:gravity="center_horizontal"
+        android:text="Add to Average"
+        android:textSize="8sp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="226dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="76dp"
+        android:gravity="center_horizontal"
+        android:max="10"
+        android:progress="3" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:gravity="center_horizontal"
+        android:text="/10"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rating"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="You can average many Scores (optional)"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Average_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="/10"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>

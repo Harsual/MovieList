@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewMovieInfo">
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/youtube_view"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+            </com.google.android.youtube.player.YouTubePlayerView>
+
+            <ImageView
+                android:id="@+id/poster"
+                android:layout_width="139dp"
+                android:layout_height="185dp"
+                android:layout_below="@id/youtube_view"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/gray_poster"
+                android:contentDescription="TODO" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/Title"
+                android:layout_width="224dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/youtube_view"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_toEndOf="@+id/poster"
+                android:layout_toRightOf="@+id/poster"
+                android:text="TextView"
+                android:textColor="#000000"
+                app:autoSizeMaxTextSize="28dp"
+                app:autoSizeMinTextSize="2dp"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:id="@+id/Actors"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Title"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginRight="44dp"
+                android:layout_toEndOf="@+id/poster"
+                android:layout_toRightOf="@+id/poster"
+                android:text="TextView"
+                app:autoSizeMaxTextSize="14dp"
+                app:autoSizeMinTextSize="12dp" />
+
+            <TextView
+                android:id="@+id/Overview"
+                android:layout_width="362dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="220dp"
+                android:layout_height="52dp"
+                android:layout_below="@+id/Actors"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_toEndOf="@+id/poster"
+                android:layout_toRightOf="@+id/poster"
+                android:text="TextView"
+                android:textColor="#000000"
+                app:autoSizeMaxTextSize="20dp"
+                app:autoSizeMinTextSize="10dp"
+                app:autoSizeTextType="uniform" />
+
+            <Button
+                android:id="@+id/add_to_watchlist"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Overview"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="96dp"
+                android:layout_marginLeft="96dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="96dp"
+                android:layout_marginRight="96dp"
+                android:background="#009688"
+                android:text="Add to Watchlist"
+                android:textColor="#FFFFFF" />
+
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@+id/poster"
+                android:layout_toRightOf="@+id/poster" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/poster"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="8dp"
+                android:text="Overview"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</ScrollView>
